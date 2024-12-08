@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "username": "administradorDePuntos",
+    "password": "$2b$10$fKlyEkSd3dVTOrrAFYM3N.9jv6J8CBk08rrnT2H3uv8cIRQuemAFm",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "name": "Fabricio",
+    "lastname": "Barreto",
+    "email": "fabrib40@gmail.com",
+    "dni": "43023002",
+    "password": "$2b$10$.QmDJm5LrEjT9dkKNNY4Keeq2Jve7PVHMnfsSVPlru8KN3FcR0fze",
+    "points": 100,
+    "role": "user"
+  }
+]

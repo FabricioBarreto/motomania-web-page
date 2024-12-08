@@ -1,0 +1,253 @@
+.beneficios {
+  text-align: center;
+}
+
+.beneficios h2 {
+  font-size: 2.5rem;
+  margin: 15px 0;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  text-shadow: 1px 1px #3f6a7e, 2px 2px #305f75, 3px 3px #4d778a,
+    4px 4px #000000;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name,
+.points {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.name {
+  margin-left: 5px;
+}
+
+.points span {
+  margin-left: -5px;
+}
+
+.logout-btn {
+  font-weight: 500;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 45px;
+  background-color: var(--main-color);
+  margin-right: 10px;
+  box-shadow: 1px 1px #3f6a7e, 2px 2px #305f75, 3px 3px #4d778a;
+  border: none;
+}
+
+.login-register {
+  display: flex;
+  justify-content: right;
+  left: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 20px 5px 12px 0;
+}
+
+.login a,
+.register a {
+  font-weight: 500;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 45px;
+  background-color: var(--main-color);
+  margin: 0 4px;
+  box-shadow: 1px 1px #3f6a7e, 2px 2px #202c31;
+}
+
+.beneficios-container {
+  width: 100%;
+}
+
+.beneficios-container {
+  margin: 10px 0;
+}
+
+.descuentos,
+.promociones,
+.sorteos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 200px;
+  margin: 10px 0;
+  border-radius: 30px;
+  box-shadow: 1px 1px #0000009f;
+  height: 200px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  background-image: url(../img/beneficios.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.descuentos::after {
+  content: "Descuentos";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 1px 1px #0000009f;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.sorteos::after {
+  content: "Sorteos";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 1px 1px #0000009f;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.promociones::after {
+  content: "Promociones";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 1px 1px #0000009f;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.descuentos:hover::after,
+.sorteos:hover::after,
+.promociones:hover::after {
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
+.back-cards-btn {
+  height: 25px;
+  width: 80px;
+  position: sticky;
+  top: 10px;
+  left: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  padding: 7px 10px;
+  border-radius: 45px;
+  background-color: var(--main-color);
+  margin-right: 10px;
+  box-shadow: 1px 1px #3f6a7e, 2px 2px #305f75, 3px 3px #4d778a;
+  border: none;
+}
+
+.section-beneficios-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.beneficios-cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(20px, 1fr)
+  );
+  gap: 20px; 
+  justify-content: center;
+  align-items: start; 
+  padding: 20px; 
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 10px 5px;
+  width: 200px;
+  height: 250px;
+  background: url(../img/card.png);
+  background-size: cover;
+  background-position: center;
+  user-select: none;
+  border-radius: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  text-shadow: 1px 1px #c7c7c7;
+}
+
+.card-neededPoints {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  text-shadow: 1px 1px #c7c7c7;
+}
+
+@media screen and (max-width: 500px) {
+  .name {
+    margin-left: 0;
+  }
+
+  .name p {
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .points span {
+    margin-left: 0;
+  }
+
+  .logout-btn {
+    margin-right: 5px;
+  }
+
+  .descuentos::after,
+  .sorteos::after,
+  .promociones::after {
+    font-size: 2rem;
+  }
+}

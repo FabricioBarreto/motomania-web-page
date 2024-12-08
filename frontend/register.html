@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Motomania: Tu tienda de confianza para repuestos y accesorios de motos. Encuentra cubiertas, lubricantes, y más productos de calidad. Explora nuestro catálogo y mejora el rendimiento de tu moto.">
+
+  <meta name="keywords"
+    content="Motomania, repuestos para motos, cubiertas de moto, accesorios para motos, lubricantes, tienda de motos, productos de moto, mejora tu moto">
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/register.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <title>Registro de usuario</title>
+</head>
+
+<body>
+
+  <body>
+    <div class="container">
+
+      <header>
+        <img class="logo" src="./img/Logo.png" alt="Logo" width="150" height="75" class="logo" draggable="false">
+        <button class="toggle-btn">☰</button>
+        <nav id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="index.html">Catálogo</a></li>
+            <li><a href="./beneficios.html">Beneficios</a></li>
+            <li><a href="./mediosDePago.html">Medios de Pago</a></li>
+            <li><a href="./metodosDeEnvio.html">Metodos de Envio</a></li>
+            <li><a href="./ubicacion.html">Ubicación</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <h2 class="register-h2">Registro de usuario</h2>
+
+        <form class="register-form" id="register-form">
+          <div class="form-group">
+            <label for="register-name">Nombre:</label>
+            <input type="text" id="register-name" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="register-lastname">Apellido:</label>
+            <input type="text" id="register-lastname" placeholder="Apellido">
+          </div>
+          <div class="form-group">
+            <label for="register-email">Correo electrónico:</label>
+            <input type="email" id="register-email" placeholder="Correo electrónico">
+          </div>
+          <div class="form-group">
+            <label for="register-dni">DNI:</label>
+            <input type="number" id="register-dni" placeholder="DNI">
+          </div>
+          <div class="form-group">
+            <label for="register-password">Contraseña:</label>
+            <input type="password" id="register-password" placeholder="Contraseña">
+          </div>
+          <div class="form-group">
+            <label for="register-password-confirm">Repetir contraseña:</label>
+            <input type="password" id="register-password-confirm" placeholder="Vuelve a escribir tu contraseña">
+          </div>
+          <button type="submit" class="register-form-btn">Registrarse</button>
+          <p class="toggle">¿Ya tienes cuenta? <a href="./login.html">Iniciar sesión</a></p>
+        </form>
+
+      </main>
+
+      <footer>
+        <p>&copy; Derechos reservados MOTOMANIA <span class="date"></span>
+        <div class="links-footer">
+          <ul>
+            <li><a href="https://wa.me/+5403624526860" target="_blank"><img src="./img/whatsapp.png"
+                  alt="whatsapp, consulta repuestos para motos" width="22px"> +54
+                3624-526860</a></li>
+            <li><a href="https://www.facebook.com/p/Motomania-100054418451961/?locale=es_LA" target="_blank"><img
+                  src="./img/facebook.png" alt="facebook, lubricantes y repuestos para motos" width="20px">
+                Motomania</a>
+            </li>
+            <li><a
+                href="https://www.google.com/maps/place/Motomania/@-26.9295223,-59.5182205,15z/data=!4m6!3m5!1s0x94441582a822d0b7:0xd876ab20333bf3e9!8m2!3d-26.9295223!4d-59.5182205!16s%2Fg%2F11c48s8fnn?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <img src="./img/location.png" alt="location, conoce nuestro local de repuestos para motos" width="18px">
+                Roberto Mora 485, Colonia Elisa</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/register.js"></script>
+  </body>
+
+</html>

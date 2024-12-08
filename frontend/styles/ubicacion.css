@@ -1,0 +1,32 @@
+.ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.ubicacion iframe {
+  width: 600px;
+  height: 450px;
+}
+
+@media (max-width: 768px) {
+  .ubicacion iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ubicacion iframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .ubicacion iframe {
+    width: 200px;
+    height: 200px;
+  }
+}

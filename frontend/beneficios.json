@@ -1,0 +1,83 @@
+{
+  "descuentos": [
+    {
+      "title": "Descuento de 10%",
+      "description": "Podras acceder a un descuento del 10% en una compra que realices menor a $100.000 cien mil pesos.",
+      "neededPoint": "10.000"
+    },
+    {
+      "title": "Descuento de 10%",
+      "description": "Podras acceder a un descuento del 10% en una compra que realices menor a $100.000 cien mil pesos.",
+      "neededPoint": "10.000"
+    },
+    {
+      "title": "Descuento de 10%",
+      "description": "Podras acceder a un descuento del 10% en una compra que realices menor a $100.000 cien mil pesos.",
+      "neededPoint": "10.000"
+    },
+    {
+      "title": "Descuento de 10%",
+      "description": "Podras acceder a un descuento del 10% en una compra que realices menor a $100.000 cien mil pesos.",
+      "neededPoint": "10.000"
+    },
+    {
+      "title": "Descuento de 10%",
+      "description": "Podras acceder a un descuento del 10% en una compra que realices menor a $100.000 cien mil pesos.",
+      "neededPoint": "10.000"
+    }
+  ],
+  "sorteos": [
+    {
+      "title": "Sorteo día del padre",
+      "description": "Se sorteara un kit de service para cualquier moto 110cc o 100cc",
+      "neededPoint": "5.000"
+    },
+    {
+      "title": "Sorteo día del padre",
+      "description": "Se sorteara un kit de service para cualquier moto 110cc o 100cc",
+      "neededPoint": "5.000"
+    },
+    {
+      "title": "Sorteo día del padre",
+      "description": "Se sorteara un kit de service para cualquier moto 110cc o 100cc",
+      "neededPoint": "5.000"
+    },
+    {
+      "title": "Sorteo día del padre",
+      "description": "Se sorteara un kit de service para cualquier moto 110cc o 100cc",
+      "neededPoint": "5.000"
+    },
+    {
+      "title": "Sorteo día del padre",
+      "description": "Se sorteara un kit de service para cualquier moto 110cc o 100cc",
+      "neededPoint": "5.000"
+    }
+  ],
+  "promociones": [
+    {
+      "title": "Asistencia en ruta",
+      "description": "En un rango de 100km podras solicitar asistencia en ruta y traemos la moto directo al taller, la asistencia no tiene costo.",
+      "neededPoint": "200.000"
+    },
+    {
+      "title": "Grua rescate",
+      "description": "En un rango de 100km podras solicitar grua auxilio y te traemos la moto directo al taller, la grua rescate no tiene costo.",
+      "neededPoint": "40.000"
+    },
+    {
+      "title": "Grua rescate",
+      "description": "En un rango de 100km podras solicitar grua auxilio y te traemos la moto directo al taller, la grua rescate no tiene costo.",
+      "neededPoint": "40.000"
+    },
+    {
+      "title": "Grua rescate",
+      "description": "En un rango de 100km podras solicitar grua auxilio y te traemos la moto directo al taller, la grua rescate no tiene costo.",
+      "neededPoint": "40.000"
+    },
+    {
+      "title": "Grua rescate",
+      "description": "En un rango de 100km podras solicitar grua auxilio y te traemos la moto directo al taller, la grua rescate no tiene costo.",
+      "neededPoint": "40.000"
+    }
+  ]
+}

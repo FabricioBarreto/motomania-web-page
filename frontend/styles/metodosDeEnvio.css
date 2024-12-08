@@ -1,0 +1,64 @@
+.metodosDeEnvio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.opciones .correoArgentino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.correoArgentino p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+}
+
+@media (max-width: 1000px) {
+  .metodosDeEnvio img {
+    width: 650px;
+  }
+}
+
+@media (max-width: 850px) {
+  .metodosDeEnvio img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 630px) {
+  .metodosDeEnvio .opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .metodosDeEnvio img {
+    width: 380px;
+  }
+}
+
+@media (max-width: 450px) {
+  .metodosDeEnvio img {
+    width: 280px;
+  }
+}
+
+@media (max-width: 300px) {
+  .metodosDeEnvio img {
+    width: 220px;
+  }
+}

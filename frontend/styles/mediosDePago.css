@@ -1,0 +1,92 @@
+.mediosDePago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mediosDePago .opciones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.billeteras,
+.bancos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.billeteras img,
+.bancos img {
+  width: 400px;
+  margin: 5px;
+  border-radius: 2%;
+}
+
+.billeteras p,
+.bancos p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.advertencia {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ff3f3f;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1020px) {
+  .opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .billeteras,
+  .bancos {
+    margin: 10px 0;
+  }
+
+  .billeteras img,
+  .bancos img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 780px) {
+  .mediosDePago .opciones {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para que las imágenes estén una debajo de otra */
+    align-items: center;
+    justify-items: center;
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .billeteras img,
+  .bancos img {
+    width: 200px;
+  }
+  .billeteras,
+  .bancos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

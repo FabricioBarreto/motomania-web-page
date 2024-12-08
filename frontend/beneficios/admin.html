@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de administración de puntos - Privado">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="./styles/admin-beneficios.css">
+  <link rel="shortcut icon" href="./../img/favicon.ico" type="image/x-icon" />
+  <title>Admin - Gestión de Puntos</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Admin</h1>
+
+      <button id="logout-btn" class="logout-btn">Cerrar Sesión</button>
+    </header>
+    <main>
+      <section class="admin-points">
+        <h2>Carga y Descuento de Puntos</h2>
+
+        <div class="admin-points-forms">
+          <!-- Formulario para carga de puntos -->
+          <div id="upload-section" class="upload-section">
+            <h3>Carga de Puntos</h3>
+            <form id="upload-form" name="upload-form" method="POST" action="/upload-points" class="upload-form">
+              <div>
+                <label for="dni-charge">DNI:</label>
+                <input type="number" id="dni-charge-input" name="dni-charge-input" required>
+              </div>
+              <div class="upload-inputs">
+                <label for="discount">Puntos:</label>
+                <input type="number" id="charge-input" name="charge-input" required>
+              </div>
+              <div class="upload-button">
+                <button class="btn" id="upload-points" type="submit">Cargar</button>
+              </div>
+          </div>
+
+          </form>
+
+          <!-- Descuentos de puntos -->
+          <div id="discounts-section" class="discounts-section">
+            <h3>Descuento de Puntos</h3>
+            <form id="discount-form" name="discount-form" method="POST" action="/discount-points" class="discount-form">
+              <div>
+                <label for="dni-discount">DNI:</label>
+                <input type="number" id="dni-discount-input" name="dni-discount-input" required>
+              </div>
+              <div>
+                <label for="discount">Puntos:</label>
+                <input type="number" id="discount-input" name="discount-input" required>
+              </div>
+              <div class="discount-button">
+                <button class="btn" id="discount-points" type="submit">Descontar</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="messages" class="messages" style="display: none;"></div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./js/admin.js"></script>
+</body>
+
+</html>

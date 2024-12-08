@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Motomania: Tu tienda de confianza para repuestos y accesorios de motos. Encuentra cubiertas, lubricantes, y más productos de calidad. Explora nuestro catálogo y mejora el rendimiento de tu moto.">
+
+  <meta name="keywords"
+    content="Motomania, repuestos para motos, cubiertas de moto, accesorios para motos, lubricantes, tienda de motos, productos de moto, mejora tu moto">
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/beneficios.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  <title>Motomania - Repuestos y Accesorios para Motos</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" src="./img/Logo.png" alt="Logo" width="150" height="75" class="logo" draggable="false">
+      <button class="toggle-btn">☰</button>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Catálogo</a></li>
+          <li><a href="#">Beneficios</a></li>
+          <li><a href="./mediosDePago.html">Medios de Pago</a></li>
+          <li><a href="./metodosDeEnvio.html">Metodos de Envio</a></li>
+          <li><a href="./ubicacion.html">Ubicación</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="beneficios">
+        <h2>Beneficios</h2>
+
+        <div class="user-data" style="display: none;">
+          <div class="name">
+            <p>¡Bienvenido <span id="name"></span>!</p>
+          </div>
+          <div class="points">
+            <img src="./img/star.png" alt="point-star" width="18">
+            <span id="points"></span>
+          </div>
+          <button class="logout-btn" id="logout-btn">Cerrar sesión</button>
+        </div>
+        <div class="login-register" style="display: flex;">
+          <div class="login"><a href="./login.html">Iniciar sesión</a></div>
+          <div class="register"><a href="./register.html">Registrate</a></div>
+        </div>
+
+        <div class="beneficios-container" style="display: block;">
+          <div class="descuentos" id="descuentos">
+          </div>
+          <div class="sorteos" id="sorteos">
+          </div>
+          <div class="promociones" id="promociones">
+          </div>
+        </div>
+
+        <section class="section-beneficios-cards" style="display: none;">
+          <button class="back-cards-btn" id="back-cards-btn"> Volver </button>
+          <div class="beneficios-cards">
+            <div class="card">
+              <h3 class="card-title"></h3>
+              <p class="card-description"></p>
+              <span class="card-neededPoints"><img src="./img/star.png" alt="point-star" width="18"></span>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+    </main>
+    <footer>
+      <p>&copy; Derechos reservados MOTOMANIA <span class="date"></span>
+      <div class="links-footer">
+        <ul>
+          <li><a href="https://wa.me/+5403624526860" target="_blank"><img src="./img/whatsapp.png"
+                alt="whatsapp, consulta repuestos para motos" width="22px"> +54
+              3624-526860</a></li>
+          <li><a href="https://www.facebook.com/p/Motomania-100054418451961/?locale=es_LA" target="_blank"><img
+                src="./img/facebook.png" alt="facebook, lubricantes y repuestos para motos" width="20px"> Motomania</a>
+          </li>
+          <li><a
+              href="https://www.google.com/maps/place/Motomania/@-26.9295223,-59.5182205,15z/data=!4m6!3m5!1s0x94441582a822d0b7:0xd876ab20333bf3e9!8m2!3d-26.9295223!4d-59.5182205!16s%2Fg%2F11c48s8fnn?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank">
+              <img src="./img/location.png" alt="location, conoce nuestro local de repuestos para motos" width="18px">
+              Roberto Mora 485, Colonia Elisa</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+  <script src="./js/beneficios.js"></script>
+  <script src="./js/logout.js"></script>
+
+</body>
+
+</html>
