@@ -26,14 +26,14 @@ document
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:3000/register", {
+      const response = await fetch("http://127.0.0.1:3000/auth/user/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, lastname, email, dni, password }),
       });
 
       if (response.ok) {
-        window.location.href = "login.html";
+        window.location.href = "admin.html";
       } else {
         const error = await response.json();
         errorMessage.textContent = error.error || "Error desconocido.";

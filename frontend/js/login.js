@@ -12,27 +12,24 @@ document
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:3000/login", {
+      const response = await fetch("http://127.0.0.1:3000/auth/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "include", // Importante para manejar cookies de sesión
         body: JSON.stringify({ email, password }),
       });
 
       if (response.ok) {
         const user = await response.json();
-        console.log("Datos de usuario recibidos:", user); // Verifica la respuesta
+        console.log("Datos de usuario recibidos:", user);
         localStorage.setItem(
           "user",
           JSON.stringify({ name: user.name, points: user.points })
         );
-        console.log(
-          "Usuario guardado en localStorage:",
-          localStorage.getItem("user")
-        );
         window.location.href = "beneficios.html";
       } else {
         const error = await response.json();
-        console.error("Error en el login:", error); // Verifica el error
+        console.error("Error en el login:", error);
         alert(error.error);
       }
     } catch (error) {

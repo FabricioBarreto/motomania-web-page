@@ -14,5 +14,35 @@
     "password": "$2b$10$.QmDJm5LrEjT9dkKNNY4Keeq2Jve7PVHMnfsSVPlru8KN3FcR0fze",
     "points": 100,
     "role": "user"
+  },
+  {
+    "id": 3,
+    "name": "Luis Rolando",
+    "lastname": "Barreto",
+    "email": "luis@gmail.com",
+    "dni": "22844838",
+    "password": "$2b$10$cRleGBBoFOW1ce7RGI6Mz.Tp./mXFrjG8fy0Yq4z8DpGa6fc1mBJm",
+    "points": 0,
+    "role": "user"
+  },
+  {
+    "id": 4,
+    "name": "Javier Enrique",
+    "lastname": "Barroso",
+    "email": "javi@gmail.com",
+    "dni": "151522210",
+    "password": "$2b$10$kmT5Xt2Bf2ttQdj3NhwR1epE0/O5cp6szm4wXXY3ttrVi/2jfaWke",
+    "points": 0,
+    "role": "user"
+  },
+  {
+    "id": 5,
+    "name": "Lidia",
+    "lastname": "Martinez",
+    "email": "Lidia@gmail.com",
+    "dni": "151522210",
+    "password": "$2b$10$h6FVZwL83n3cSWyt7vHkver665coxOX1VxQ/J1WPunXI8sp4NgKZC",
+    "points": 0,
+    "role": "user"
   }
 ]
