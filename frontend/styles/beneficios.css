@@ -76,8 +76,7 @@
 }
 
 .descuentos,
-.promociones,
-.sorteos {
+.promociones {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -116,21 +115,6 @@
   transition: background-color 0.3s ease;
 }
 
-.sorteos::after {
-  content: "Sorteos";
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  color: #fff;
-  font-size: 3rem;
-  text-shadow: 1px 1px #0000009f;
-  width: 100%;
-  height: 100%;
-  transition: background-color 0.3s ease;
-}
-
 .promociones::after {
   content: "Promociones";
   position: absolute;
@@ -147,7 +131,6 @@
 }
 
 .descuentos:hover::after,
-.sorteos:hover::after,
 .promociones:hover::after {
   background-color: rgba(0, 0, 0, 0.233);
 }
@@ -180,13 +163,15 @@
 .beneficios-cards {
   display: grid;
   grid-template-columns: repeat(
-    auto-fit,
-    minmax(20px, 1fr)
-  );
-  gap: 20px; 
-  justify-content: center;
-  align-items: start; 
-  padding: 20px; 
+    auto-fill,
+    minmax(205px, 1fr)
+  ); /* Tres columnas por defecto */
+  padding: 20px 0;
+}
+
+.beneficios-cards div {
+  justify-self: center;
+  align-self: center;
 }
 
 .card {
@@ -246,8 +231,21 @@
   }
 
   .descuentos::after,
-  .sorteos::after,
   .promociones::after {
     font-size: 2rem;
   }
 }
+
+/* 
+@media screen and (max-width: 1024px) {
+  .beneficios-cards {
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .beneficios-cards {
+    grid-template-rows: 1fr;
+    gap: 20px; 
+  }
+} */

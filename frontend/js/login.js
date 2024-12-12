@@ -3,10 +3,10 @@ document
   .addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const email = document.getElementById("login-email").value.trim();
+    const identifier = document.getElementById("login-identifier").value.trim();
     const password = document.getElementById("login-password").value.trim();
 
-    if (!email || !password) {
+    if (!identifier || !password) {
       alert("Por favor, completa todos los campos.");
       return;
     }
@@ -15,13 +15,12 @@ document
       const response = await fetch("http://127.0.0.1:3000/auth/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        credentials: "include", // Importante para manejar cookies de sesión
-        body: JSON.stringify({ email, password }),
+        credentials: "include",
+        body: JSON.stringify({ identifier, password }),
       });
 
       if (response.ok) {
         const user = await response.json();
-        console.log("Datos de usuario recibidos:", user);
         localStorage.setItem(
           "user",
           JSON.stringify({ name: user.name, points: user.points })
@@ -29,11 +28,10 @@ document
         window.location.href = "beneficios.html";
       } else {
         const error = await response.json();
-        console.error("Error en el login:", error);
         alert(error.error);
       }
     } catch (error) {
+      console.error("Error al iniciar sesión:", error);
       alert("Error al iniciar sesión. Inténtalo más tarde.");
-      console.error(error);
     }
   });

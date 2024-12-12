@@ -33,7 +33,7 @@ document
       });
 
       if (response.ok) {
-        window.location.href = "admin.html";
+        window.location.href = "beneficios.html";
       } else {
         const error = await response.json();
         errorMessage.textContent = error.error || "Error desconocido.";

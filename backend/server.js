@@ -8,7 +8,6 @@ const app = express();
 const HOST = "127.0.0.1";
 const PORT = 3000;
 
-// Middleware para evitar la caché en páginas protegidas
 app.use((req, res, next) => {
   res.set("Cache-Control", "no-store, no-cache, must-revalidate, private");
   next();
@@ -31,7 +30,7 @@ app.use(
     cookie: {
       secure: false, // Para desarrollo, asegurarte de que esta opción esté en `false`
       httpOnly: true,
-      sameSite: "lax", // Cambia a `strict` si tienes problemas de sesión
+      sameSite: "lax",
       maxAge: 24 * 60 * 60 * 1000, // 1 día
     },
   })

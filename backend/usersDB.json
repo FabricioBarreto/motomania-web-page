@@ -44,5 +44,15 @@
     "password": "$2b$10$h6FVZwL83n3cSWyt7vHkver665coxOX1VxQ/J1WPunXI8sp4NgKZC",
     "points": 0,
     "role": "user"
+  },
+  {
+    "id": 6,
+    "name": "Gladis Bibiana",
+    "lastname": "Barroso",
+    "email": "bebi@gmail.com",
+    "dni": "22239887",
+    "password": "$2b$10$gPmL/dAl0dpq6xTEDQPTSeBtlyWXJ8A/GA7vXHnSvUm.CKhtULqtO",
+    "points": 0,
+    "role": "user"
   }
 ]

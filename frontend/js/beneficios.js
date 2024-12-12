@@ -20,10 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Asocia eventos de clic a cada sección
-document.getElementById("sorteos").addEventListener("click", function () {
-  manejarSeccion("sorteos");
-});
-
 document.getElementById("descuentos").addEventListener("click", function () {
   manejarSeccion("descuentos");
 });
